@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "author": "Cory Brown",
+        "text": "My 2 scents"
+    },
+    {
+        "id": 2,
+        "author": "Jared Anderson",
+        "text": "Let me put it this way. You've heard of Socrates? Aristotle? Plato? Morons!"
+    },
+    {
+        "id": 3,
+        "author": "Matt Poulson",
+        "text": "It's just a function!"
+    },
+    {
+        "id": 4,
+        "author": "Bruce Campbell",
+        "text": "Fish in a tree? How can that be?"
+    },
+    {
+        "id": 1453305605893,
+        "author": "Luke",
+        "text": "Rey, I am your father!"
+    },
+    {
+        "id": 1453305630315,
+        "author": "Rey",
+        "text": "Wait, what?"
+    },
+    {
+        "id": 1453305706756,
+        "author": "Luke",
+        "text": "I'm your father, was that not clear?"
+    },
+    {
+        "id": 1453305724516,
+        "author": "Rey",
+        "text": "No, it's just, are you sure?"
+    },
+    {
+        "id": 1453305735539,
+        "author": "Luke",
+        "text": "Pretty sure."
+    },
+    {
+        "id": 1453305774609,
+        "author": "Rey",
+        "text": "Cuz I didn't think we were going to know until at least Episode VIII"
+    },
+    {
+        "id": 1453307836631,
+        "author": "Tony",
+        "text": "I love react!"
+    },
+    {
+        "id": 1453328891247,
+        "author": "Jason",
+        "text": "React baby!"
+    }
+]
