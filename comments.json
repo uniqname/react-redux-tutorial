@@ -18,5 +18,10 @@
         "id": 4,
         "author": "Bruce Campbell",
         "text": "Fish in a tree? How can that be?"
+    },
+    {
+        "id": 5,
+        "author": "Tim Riker",
+        "text": "So what we're learning is to keep our componets dumb?"
     }
 ]
