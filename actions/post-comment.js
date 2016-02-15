@@ -1,6 +1,7 @@
 // import { FETCH_COMMENTS } from '../actions/action-types';
 import requestPostComment from './request-post-comment';
 import recievePostComment from './recieve-post-comment';
+import addComment from './add-comment';
 import fetchFail from './fetch-fail';
 import { commentsURL } from '../endpoints';
 

@@ -1,2 +1,2 @@
-export const commentsURL = '/api/comment';
+export const commentsURL = '/api/comments';
 export const authorURL = '/api/author';
