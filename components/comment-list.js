@@ -1,7 +1,7 @@
 import Comment from './comment';
 
 //CommentList
-export default ({ comments=[], filter=()=>true, id=0}) => (
+export default ({ comments=[], filter=()=>true}) => (
     <div className="comment__list">
         { comments
             .filter(filter)

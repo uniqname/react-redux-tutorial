@@ -38,5 +38,6 @@ ReactDOM.render(
             </Route>
         </Router>
     </Provider>,
+    // https://medium.com/@dan_abramov/two-weird-tricks-that-fix-react-7cf9bbdef375#486f
     document.querySelector('#content')
 );
