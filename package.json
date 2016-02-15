@@ -10,13 +10,28 @@
     "babel-register": "^6.4.3",
     "babel-standalone": "^1.0.0",
     "body-parser": "^1.4.3",
+    "classnames": "^2.2.3",
     "express": "^4.4.5",
+    "page": "^1.6.4",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "react-redux": "^4.4.0",
+    "react-router": "^2.0.0",
+    "redux": "^3.3.1",
+    "redux-simple-router": "^2.0.4",
     "redux-thunk": "^1.0.3"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "babel-loader": "^6.2.2",
+    "babel-plugin-react-require": "^2.1.0",
+    "css-loader": "^0.23.1",
+    "style-loader": "^0.13.0",
+    "webpack": "^1.12.13"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node babel-server.js"
+    "start": "node babel-server.js",
+    "dev": "npm start && webpack-dev-server"
   },
   "repository": {
     "type": "git",
@@ -28,7 +43,7 @@
     "comment",
     "example"
   ],
-  "author": "petehunt",
+  "author": "cory brown",
   "bugs": {
     "url": "https://github.com/reactjs/react-tutorial/issues"
   },
@@ -41,6 +56,9 @@
       "es2015",
       "stage-0",
       "react"
+    ],
+    "plugins": [
+      "react-require"
     ]
   }
 }

@@ -18,6 +18,7 @@ import bodyParser from 'body-parser';
 const app = express();
 
 const COMMENTS_FILE = path.join(__dirname, 'comments.json');
+const INDEX = fs.readFileSync(path.join(__dirname, 'public', 'index.html'), {encoding: 'utf8'});
 app.set('port', (process.env.PORT || 4000));
 
 app.use('/', express.static(path.join(__dirname, 'public')));
@@ -59,12 +60,31 @@ app.post('/api/comments', (req, res) =>
                 process.exit(1);
             }
             res.setHeader('Cache-Control', 'no-cache');
-            res.json(comments);
+            res.json(newComment);
         });
     })
 );
 
+app.get('/api/authors/:author', (req, res) => {
+    console.log('author: ', req.params.author);
+    fs.readFile(COMMENTS_FILE, (err, data) => {
+        if (err) {
+            console.error(err);
+            process.exit(1);
+        }
+        res.setHeader('Cache-Control', 'no-cache');
+        res.json(
+            JSON.parse(data).filter(comment => comment.author === req.params.author)
+        );
+    });
+});
+
+app.use('/', (req, res) => {
+    res.send(INDEX)
+});
+
+
 
 app.listen(app.get('port'), function() {
-    console.log(`Server started: http://localhost: ${app.get('port')}/`);
+    console.log(`Server started: http://localhost:${app.get('port')}/`);
 });
